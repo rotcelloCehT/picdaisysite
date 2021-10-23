@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: fred;
+    src: url("../fonts/Fredoka/FredokaOne-Regular.ttf");
+  },
+  @font-face {
+    font-family: latolight;
+    src: url("../fonts/Lato/Lato-Light.ttf");
+  },
+  
+  body {
+    font-family: latolight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-green border-4 border-purple rounded-lg shadow hover:shadow-none px-3 py-0.5 font-fred text-sm;
+  }
+}
